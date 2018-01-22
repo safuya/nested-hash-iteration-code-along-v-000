@@ -19,7 +19,6 @@ def remove_strawberry(contacts)
     details.each do |detail, value|
       if detail == :favorite_ice_cream_flavors
         contacts[name][detail] -= ["strawberry"]
-        binding.pry
       end
     end
   end
