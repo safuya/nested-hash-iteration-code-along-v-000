@@ -15,5 +15,13 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
+  contact.each do |name, details|
+    details.each do |detail, value|
+      if detail == :name
+        value -= ["strawberry"]
+      end
+    end
+  end
 
+  contacts
 end
